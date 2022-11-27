@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <title>Converter</title>
+</head>
+<body>
+    <!-- TODO: NAVBAR beim scrollen -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">Converter</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="#temp">Temperatur Umrechner</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="#gewicht">Gewicht Umrechner</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="#laenge">Längen Umrechner</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+        <div class="container mt-5">
+            <div class="home" id="home">
+                <h1>Home</h1>
+                <h3 class="title mt-2">Auf dieser Seite kann man die Temperatur, Gewicht und Längen umrechnen</h3>
+                <h6>Disclaimer: Diese Seite nutzt die Bootstrap CDN und wird nicht gehostet.<br>
+                    Diese Seite ist nur für meine Bewerbungszwecken gedacht.
+                    <br>
+                    Dieser Umrechner ist mit Sorgfalt erstellt worden.
+                    <br>
+                    Für die Korrektheit des Ergebnisses schließen ich aber jede Haftung aus.
+                </h6>
+                <p class="instruction">
+                    <h6 class="mb-0">Schritt 1:</h6> 
+                    Zahl in das passende Feld eintragen
+                    <h6 class="mb-0">Schritt 2:</h6> 
+                    warten ...
+                </p>
+            </div>
+
+            <div class="temp  mt-5" id="temp">
+                <h3>Temperatur umrechnen</h3>
+                <input type="text" id="C" Placeholder="Celsius"> °C <br>
+                <input type="text" id="F" Placeholder="Fahrenheit"> °F <br>
+                <input type="text" id="K" Placeholder="Kelvin"> °K <br>
+            </div>
+
+            <div class="gewicht mt-5" id="gewicht">
+                <h3>Gewicht umrechnen</h3>
+                <input type="text" id="mikrog" Placeholder="Mikrogramm"> Mikrogramm <br>
+                <input type="text" id="mg" Placeholder="Milligramm"> Milligramm <br>
+                <input type="text" id="g" Placeholder="Gramm"> Gramm <br>
+                <input type="text" id="kg" Placeholder="Kilogramm"> Kilogramm <br>
+                <input type="text" id="t" Placeholder="Tonne"> Tonne <br>
+            </div>
+
+            <div class="laenge mt-5 mb-5" id="laenge">
+                <h3>Länge umrechnen</h3>
+                <input type="text" id="mm" Placeholder="Millimeter"> Millimeter <br>
+                <input type="text" id="cm" Placeholder="ZentiMeter"> Zentimeter <br>
+                <input type="text" id="dm" Placeholder="Dezimeter"> Dezimeter <br>
+                <input type="text" id="m" Placeholder="Meter"> Meter <br>
+                <input type="text" id="km" Placeholder="Kilometer"> Kilometer <br>
+                <input type="text" id="z" Placeholder="Zoll"> Zoll <br>
+                <input type="text" id="fuß" Placeholder="Fuß"> Fuß <br>
+                <input type="text" id="y" Placeholder="Yards"> Yards <br>
+                <input type="text" id="mile" Placeholder="Miles"> Meilen <br>
+            </div>
+            <br>
+            
+        </div>
+    
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Converterjs -->
+    <script src="script/weightconverter.js"></script>
+    <script src="script/tempconverter.js"></script>
+    <script src="script/lengthconverter.js"></script>
+</body>
+</html>
