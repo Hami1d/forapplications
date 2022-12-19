@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #5c4180;
+}
+
+h2 {
+    margin-top: 10%;
+}
+
+p {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#Todoinput {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgb(44, 41, 41);
+    color: rgb(255, 255, 255);
+}
+
+#Todoaddbutton {
+    margin-left: 2px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(44, 41, 41);
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    flex-direction: column;
+}
+
+.task {
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+.content {
+    flex-direction: column;
+    background-color: rgb(44, 41, 41);
+    color: rgb(255, 255, 255);
+}
+
+
+/* .actionbutton button {
+    margin-top: 5%;
+    margin-left: 2px;
+    margin-bottom: 1rem;
+    padding: 5px;
+    width: 5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(44, 41, 41);
+    color: rgb(255, 255, 255);
+} */

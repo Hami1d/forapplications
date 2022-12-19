@@ -923,7 +923,7 @@ def male_person():
         maybe_dr = ""
     if rd.randint(0, 10) <= 9:
         first_name = rd.choice(male_list)
-    else:
+    else:   # wegen der dopplung
         name_1 = rd.choice(male_list)
         name_2 = rd.choice(male_list)
         while name_1 == name_2:
