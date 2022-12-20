@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(193, 222, 231);
+}
+
+.container {
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+button {
+    border-radius: 15px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: rgb(43, 41, 41);
+    color: rgb(193, 222, 231);
+}
+
+input {
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.formeln {
+    margin-top: 2rem;
+}
+
+.inputs {
+    margin-top: 2rem;
+}
+
+p {
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 1rem;
+}
+
+.prozentwert_Formel {
+
+    margin-top: 1rem;
+}
+
+.prozentsatz_Formel {
+    margin: 1rem 0 1rem 0;
+}
+
+.prozentwert {
+    
+    margin: 1rem 0 1rem 0;
+}

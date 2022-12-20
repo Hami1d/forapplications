@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Prozentrechner</h1>
+
+        <div class="formeln">
+            <h4>Prozent Formeln</h4>
+            <h5>Zum Berechnen des Prozentsatzes P%, Grundwertes GW
+                und Prozentwertes PW können auch folgende Formel benutzt werden.</h5>
+            <div class="prozentwert_Formel">
+                <p>Prozentwert Formel:</p>
+                <p>W = (P%⋅G)/100</p>
+            </div>
+
+            <div class="prozentsatz_Formel">
+                <p>Prozentsatz Formel:</p>
+                <p>P% = (PW/GW)*100</p>
+            </div>
+
+            <div class="grundwert_Formel">
+                <p>Grundwert Formel:</p>
+                <p>G = (W⋅100)/p%</p>
+            </div>
+        </div>
+        <div class="inputs">
+            <div class="grundwert" id="Grundwertf">
+                <h4>Grundwert</h4>
+                <input type="text" id="GWP%" placeholder="Hier Prozentsatz eingeben">% 
+                <input type="text" id="GWPW" placeholder="Hier Prozentwert eingeben">
+                <button id="GWbtn">berechnen</button>
+            </div>
+
+            <div class="prozentwert" id="prozentwertf">
+                <h4>Prozentwert</h4>
+                <input type="text" id="PWP%" placeholder="Hier Prozentsatz eingeben">% 
+                <input type="text" id="PWGW" placeholder="Hier Grundwert eingeben">
+                <button id="PWbtn">berechnen</button>
+            </div>
+
+            <div class="prozentsatz" id="prozentsatzf">
+                <h4>Prozentsatz</h4>
+                <input type="text" id="P%GW" placeholder="Hier Grundwert eingeben"> 
+                <input type="text" id="P%PW" placeholder="Hier Prozentwert eingeben">
+                <button id="P%btn">berechnen</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../script/main.js"></script>
+</body>
+</html>
