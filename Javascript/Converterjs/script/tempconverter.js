@@ -7,9 +7,9 @@
 
 // ids: C F K
 
-let Celsius = document.getElementById("C");
-let Fahrenheit = document.getElementById("F");
-let Kelvin = document.getElementById("K");
+const Celsius = document.getElementById("C");
+const Fahrenheit = document.getElementById("F");
+const Kelvin = document.getElementById("K");
 
 Celsius.addEventListener("input",function() {
     let a = this.value;

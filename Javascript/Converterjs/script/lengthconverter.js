@@ -1,12 +1,12 @@
-let Millimeter = document.getElementById("mm");
-let Zentimeter = document.getElementById("cm");
-let Meter = document.getElementById("m");
-let Dezimeter = document.getElementById("dm");
-let Kilometer = document.getElementById("km");
-let Zoll = document.getElementById("z");
-let Fuß = document.getElementById("fuß");
-let Yards = document.getElementById("y");
-let Meilen = document.getElementById("mile");
+const Millimeter = document.getElementById("mm");
+const Zentimeter = document.getElementById("cm");
+const Meter = document.getElementById("m");
+const Dezimeter = document.getElementById("dm");
+const Kilometer = document.getElementById("km");
+const Zoll = document.getElementById("z");
+const Fuß = document.getElementById("fuß");
+const Yards = document.getElementById("y");
+const Meilen = document.getElementById("mile");
 
 
 Millimeter.addEventListener("input",function() {

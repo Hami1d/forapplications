@@ -1,10 +1,10 @@
 // ng mg g kg t
 
-let mikrogramm = document.getElementById("mikrog");
-let milligramm = document.getElementById("mg");
-let gramm = document.getElementById("g");
-let kilogramm = document.getElementById("kg");
-let tonne = document.getElementById("t");
+const mikrogramm = document.getElementById("mikrog");
+const milligramm = document.getElementById("mg");
+const gramm = document.getElementById("g");
+const kilogramm = document.getElementById("kg");
+const tonne = document.getElementById("t");
 
 mikrogramm.addEventListener("input",function() {
     let a = this.value;

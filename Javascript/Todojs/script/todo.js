@@ -7,7 +7,7 @@ const addTodo = document.getElementById('Todoaddbutton');
 const Todocontent = document.getElementById('Todocontent');
 
 
-addTodo.addEventListener('click', function() {
+addTodo.addEventListener('click', () => {
     const task = document.createElement('p');
     const btn = document.createElement("button");
     task.innerText = Todoinput.value
@@ -19,14 +19,14 @@ addTodo.addEventListener('click', function() {
     btn.style.color = 'rgb(255, 255, 255)';
     btn.style.cursor= 'pointer';
 
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', () => {
         Todocontent.removeChild(task)
         Todocontent.removeChild(btn)
     });
-    task.addEventListener('click', function() {
+    task.addEventListener('click', () => {
         task.style.textDecoration = "line-through"
     });
-    task.addEventListener('dblclick', function() {
+    task.addEventListener('dblclick', () => {
         task.style.textDecoration = "none"
     });
 });
