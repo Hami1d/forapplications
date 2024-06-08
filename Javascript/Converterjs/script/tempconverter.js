@@ -11,30 +11,37 @@ const Celsius = document.getElementById("C");
 const Fahrenheit = document.getElementById("F");
 const Kelvin = document.getElementById("K");
 
-Celsius.addEventListener("input",function() {
-    let a = this.value;
-    let b = (a * 9/5) + 32 ; // Fahrenheit
-    let c = a * 1 + 273.15; // Kelvin 
-    // let c = a + 273.15;
+// Funktion zur Umrechnung und Aktualisierung der Temperaturwerte
+function convertTemperature(unit, value) {
+  let c, f, k; // Variablen für die drei Temperatureinheiten
 
-    Fahrenheit.value=b;
-    Kelvin.value=c;
+  if (unit === "C") {
+    c = parseFloat(value) || 0;
+    f = (c * 9) / 5 + 32;
+    k = c + 273.15;
+  } else if (unit === "F") {
+    f = parseFloat(value) || 0;
+    c = ((f - 32) * 5) / 9;
+    k = c + 273.15;
+  } else if (unit === "K") {
+    k = parseFloat(value) || 0;
+    c = k - 273.15;
+    f = (c * 9) / 5 + 32;
+  }
+
+  if (unit !== "C") Celsius.value = c;
+  if (unit !== "F") Fahrenheit.value = f;
+  if (unit !== "K") Kelvin.value = k;
+}
+
+Celsius.addEventListener("input", function () {
+  convertTemperature("C", this.value);
 });
 
-
-Fahrenheit.addEventListener("input",function() {
-    let a = this.value;
-    let b = (a - 32) * 5/9 ; // Celsius
-    let c = (a - 32) * 5/9 + 273.15 ; // Kelvin
-    Celsius.value=b;
-    Kelvin.value=c;
+Fahrenheit.addEventListener("input", function () {
+  convertTemperature("F", this.value);
 });
 
-
-Kelvin.addEventListener("input",function() {
-    let a = this.value;
-    let b = a - 273.15 ; // Celsius
-    let c = (a - 273.15) * 9/5 + 32 ; // Fahrenheit
-    Celsius.value=b;
-    Fahrenheit.value=c;
+Kelvin.addEventListener("input", function () {
+  convertTemperature("K", this.value);
 });
